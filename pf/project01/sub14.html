@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>index 우미건설</title>
+	<link rel="stylesheet" href="css/subimport.css" />
+	<script src="js/jquery.js"></script>
+	
+		
+</head>
+
+<body>
+	<header id="header">
+		<div id="header-wrap">
+			<h1><a href="index.html"><img src="images/common/woomi_logo.jpg"/></a></h1>
+			
+			<dl class="topmenu">
+				<dt class="hide">상위메뉴</dt>
+				<dd><a href="#">사이트맵</a></dd>
+				<dd><a href="#">고객센터</a></dd>
+				<dd><a href="#">ENGLISH</a></dd>
+			</dl>
+			
+			<nav id="nav">
+				<ul id="gnb">
+					<li><a href="sub11.html">회사소개</a></li>
+					<li><a href="sub21.html">사업소개</a></li>
+					<li><a href="sub31.html">신뢰경영</a></li>
+					<li><a href="sub41.html">PR센터</a></li>
+				</ul>							
+			</nav>			
+		</div>
+	</header>
+	
+	<section class="sub-visual">
+		<div>
+			<img src="images/sub1/sub-visual.jpg" alt=""/>
+		</div>		
+	</section>
+	
+	<div id="container">
+		
+		<aside class="side-bar">
+				<div class="text">
+					<h2>회사소개</h2>
+					<p>A Company with a ground vision</p>
+				</div>
+				
+				<nav class="lnb">
+					<ul>
+						<li><a href="sub11.html">CEO 인사말</a></li>
+						<li><a href="sub12.html">기업소개</a></li>
+						<li><a href="sub13.html">회사연혁</a></li>
+						<li class="on"><a href="sub14.html">기업조직</a></li>
+					</ul>
+				</nav>			
+		</aside>
+		
+		<section id="contents">
+			
+		
+			
+			<div class="contop">
+				<h3>기업조직</h3>
+				
+				<ul class="path">
+					<li><a href="#">홈</a>&gt;</li>
+					<li><a href="#">회사소개</a>&gt;</li>
+					<li><a href="#"><strong>기업조직</strong></a></li>
+				</ul>
+			</div>
+			
+			
+			<div class="conbody04">
+					<img src="images/sub4/zzz.jpg"/>
+			</div> <!-- conbody -->	
+						
+		</div>	<!-- //컨테이너 -->
+			
+					
+		</section>
+		
+		
+
+	
+	<footer id="footer">
+	<div id="footer-wrap">
+		
+		<h4>
+			<img src="images/main/footer_logo.png"/>
+		</h4>
+		
+		<div class="footer-text">
+			<ul>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">찾아오시는길</a></li>
+			</ul>
+		</br>
+			<address>
+				대표: 이광래     주소: 경기도 성남시 분당구 성남대로 381 우미사옥     대표전화: 1588-9950
+			</address>
+			
+			<p>
+				COPYRIGHT (C) 2016 WOOMI CONSTRUCTION CORP. ALL RIGHTS RESERVED 
+			</p>
+		</div>
+		
+		<form> 
+			<p>
+				<select name="family" id="family">
+					<option value="family-site"/>Family Site</option>
+					<option value="family-site"/>금파재단 사이트</option>
+					<option value="family-site"/>협력업체 사이트</option>
+					<option value="family-site"/>사이버신문고</option>
+					<option value="family-site"/>직원전용 바로가기</option>
+				</select>
+			</p>		
+		</form>
+		
+	</div>
+</footer>
+	
+	
+	<script>
+			
+			$(function(){
+				////
+				
+				//비주얼 이미지
+				
+				var cnt = 0;
+				var imgurl = "";
+				
+				$('.btn_right').click(function(){
+															
+					cnt++;					
+					imgurl='images/main/main'+cnt+'.jpg';
+					
+					$('#visual-wrap img').attr('src',imgurl).hide().fadeIn();
+					$('.path li').removeClass();
+					$('.path li').eq(cnt).addClass('on');
+															
+				});
+				
+				$('.btn_left').click(function(){
+					
+					cnt--;
+					imgurl='images/main/main'+cnt+'.jpg';
+					
+					$('#visual-wrap img').attr('src',imgurl).hide().fadeIn();
+					$('.path li').removeClass();
+					$('.path li').eq(cnt).addClass('on');
+					
+				});
+				
+				$('.path li').click(function(){
+					
+					cnt=$(this).index();
+					imgurl='images/main/main'+cnt+'.jpg';
+					
+					$('#visual-wrap img').attr('src',imgurl);
+					$('.path li').removeClass('on');
+					$(this).addClass('on');
+				
+					
+					
+				});
+				
+				
+				///////////////////////
+			})
+			
+			
+		</script>
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

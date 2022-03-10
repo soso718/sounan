@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>대림미술관 : 반응형웹</title>
+	<link rel="stylesheet" href="css/reset.css"/>	
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<style>
+	
+		
+		@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+		
+		#wrap img{wi dth: 100%;}
+		#wrap{width: 100%;hei ght: 1050px;margin: auto;}
+		#wrap img{}
+		#header{width: 100%;height: 150px;position: relative;}
+		#header .h1{position: absolute;left: 0;top: 60px;}
+		#header .h2{display: none;}
+		#header .h3{display: none;}
+		#nav{}
+		#gnb{position: absolute;right: 0;top: 0;width: 44%;}
+		#gnb li{float: left;width: 25%;text-align: center;}
+		#gnb li a{display: block;width: 100%;height: 150px;line-height: 150px;font-size: 21px;font-family: 'Titillium Web', sans-serif;}
+		#gnb li:hover a{background: #000;color:#fff;}
+		
+		#container:after{display: block;content:'';clear:both;}
+		#container{height: 100%;}
+		#contents{}
+		#contents ul li{float: left;width: 33.333333%;height: 1050px;position: relative;overflow: hidden;}
+		#contents ul li a{display: block;font-size: 16px;position: relative;}
+		#contents ul li a .txt{padding: 20px;box-sizing:border-box;b ackground: blue;}
+		#contents ul li a .txt2{position: absolute;left: 50%;margin-left: -145px;top: 400px;color:#fff;text-align: center;bac kground: red;}
+		#contents ul li a .txt3{position: absolute;left: 0;top: 0;color:#Fff;left: 20px;top: 210px;}
+		#contents ul li a .txt3 p:nth-child(1){font-size: 28px;}
+		#contents ul li a .txt3 p:nth-child(2){font-size: 24px;}
+		#contents ul li a .txt2 .name{font-size: 34px;}
+		#contents ul li a .txt2 .title2{font-size: 26px;}
+		#contents ul li a .txt2 .date{font-size: 16px;}
+		
+		#contents ul li div{}
+		#contents ul li p{font-family: 'Jeju Gothic', serif;}
+		#contents ul li a img{position: absolute;left: 0;top: 0;}
+		#contents ul li .title{position: absolute;left: 20px;top: 530px;color:#fff;font-size: 30px;}
+
+		#contents ul li:nth-child(1){ba ckground: pink;height: 1050px;padding: 0;}		
+			#contents ul li div:nth-child(1){b ackground: green;height: 700px;}
+			#contents ul li div:nth-child(2){height: 350px;}
+		#contents ul li:nth-child(2){ba ckground: lime;height: 1050px;}
+		#contents ul li:nth-child(3){b ackground: salmon;height: 350px;}
+		#contents ul li:nth-child(4){b ackground: red;height: 350px;}
+		#contents ul li:nth-child(5){ba ckground: blue;height: 350px;position: relative;}
+		#contents ul li:nth-child(6){ba ckground: skyblue;height: 350px;}
+
+		#footer{width: 100%;height: 150px;background: #fff;float: left;}
+		#footer h1{width: 15%;float: left;margin-top: 32px;back ground: red;}
+		#footer .txt{width: 70%;float: left;margin-top: 32px;back ground: lime;}
+		#footer .txt p{margin-bottom: 10px;}
+		#footer .sns{width: 15%;float: right;margin-top: 32px;bac kground: pink;}
+		#footer .sns li{float: left;margin-right: 10px;}
+		#footer .sns li:last-child{margin-right: 0px;}
+		
+		
+		
+		
+		
+		@media screen and (max-width:1599px) {  
+			
+			#wrap{width: 90%;}
+				
+		}
+		
+		@media screen and (max-width:1080px) {  
+			
+			#contents ul li{width: 50%;}
+			#contents ul li:nth-child(5){display: none;}
+			#footer .txt p{font-size: 12px;}
+			
+					
+		}
+		
+		@media screen and (max-width:720px) {  
+			
+			#header{height: 200px;}
+			#header .h1{display: none;}
+			#header .h2{display: block;position: absolute;left: 50%;margin-left: -44px;top: 10px;}
+			#gnb{top: 120px;width: 100%;}
+			#gnb li a{height: 80px;line-height: 80px;font-size: 21px;}
+			#contents ul li{width: 100%;}			
+			#contents ul li:nth-child(3){display: none;}
+			#contents ul li:nth-child(6){display: none;}
+			#contents ul li:nth-child(1){height: 700px;}
+			
+			
+			#footer{height: 270px;position: relative;}
+			#footer h1{width: 100%;text-align: center;}
+			#footer h1 img{width: 44px;}
+			#footer .txt{width: 100%;margin-top: 10px;text-align: center;position: relative;}
+			#footer .sns{width: 100%;margin-top: 10px;margin-left: -50px;position: absolute;left: 50%;margin-left: -100px;bottom: 0;}
+			#footer .sns li{float: left;}
+			
+		}
+		
+		@media screen and (max-width:480px) {  
+			
+			#header{height: 100px;}
+			#header .h2{position: absolute;margin-left: -22px;top: 28px;}
+			#header .h2 img{width: 44px;}			
+			#header .h3{position: absolute;display: block;width: 48px;top: 26px;}
+			#header .h3 img{width: 48px;}
+			#gnb{display: none;width: 100%;height: 280px;position: absolute;right: 0;top: 100px;width: 100%;z-index: 50;background: #000;}
+			#gnb li{float: none;width: 100%;}
+			#gnb li a{display: block;width: 100%;height:70px;line-height: 70px;font-size: 16px;color:#fff}
+			#gnb li:hover a{background: #fff;color:#000;}
+			
+			#contents ul li{height:auto;}
+			#contents ul li:nth-child(1){height: 280px;}		
+			#contents ul li:nth-child(2){height: 530px;}	
+			#contents ul li div:nth-child(1){height: 280px;}
+			#contents ul li:nth-child(3){display: none;}	
+			#contents ul li:nth-child(6){display: none;}	
+			#contents ul li:nth-child(4){height: 180px;d isplay: none;}	
+			#contents ul li:nth-child(5){height: 200px;display: none;}	
+			#contents img{width: 100%;}
+			#contents ul li .txt{position: absolute;left: 20px;top: 0;color:#fff;font-size: 30px;}
+			#contents ul li .title{position: absolute;left: 50%;margin-left: -130px;top: 80px;color:#fff;font-size: 21px;text-align: center;}
+			#contents ul li a .txt2{top: 230px;height: 150px;}
+			#contents ul li a .txt3{position: absolute;left: 0;top: 0;color:#Fff;left: 20px;top: 210px;}
+	
+		}
+		
+		
+		
+	</style>
+
+</head>
+<body>
+		
+		
+	<div id="wrap">	
+		
+		<header id="header">
+			<h1 class="h1"><a href="index.php"><img src="images/logoo2.png"/></a></h1>
+			<h1 class="h2"><a href="index.php"><img src="images/foot_logo.png"/></a></h1>
+			<h2 class="h3"><a href="#"><img src="images/menu.png"/></a></h2>
+			<nav id="nav">
+				<ul id="gnb">
+					<li><a href="#">MAIN</a></li>
+					<li><a href="#">WHAT</a></li>
+					<li><a href="#">PREVIEW</a></li>
+					<li><a href="#">ARTIST</a></li>
+				</ul>
+			</nav>		
+		</header>
+		
+		<div id="container">		
+			<section id="contents">
+				<ul>
+					<li>
+						<div>							
+							<a href="#">			
+								<img src="images/box1.jpg"/>	
+								<p class="txt">		
+									<p class="title">-</br>2016년 컬러풀한 일상을 여는</br> 특별한 공간 제안! </p>
+									<p class="cont">'색(色)'을 주제로 동시대를 대표하는 디자이너와 세계적인 브랜드를 소개하는 < COLOR YOUR LIFE - 색, 다른 공간 이야기 >를 개최합니다.</p>
+								</p>
+							</a>
+						</div>
+						
+						<div>							
+							<a href="#">
+								<img src="images/box2.jpg"/>
+							</a>
+						</div>
+					</li>
+					
+					
+					<li>
+						<a href="#">
+							<img src="images/box3.jpg"/>
+							<div class="txt2">
+								<p class="name">COLOR YOUR LIFE</p>
+								<p class="title2">색, 다른공간 이야기</p>
+								<p class="date">2016.02.25 - 2016.08.21</p>
+							</div>
+						</a>
+					</li>
+					<li><a href="#"><img src="images/box4.jpg"/></a></li>
+					<li>
+						<a href="#">
+							<img src="images/box5.jpg"/>	
+							<div class="txt3">
+								<p class="title3">-</br>COLOR IS EVERYWHERE </p>
+								<p class="name2">일상의 발견</p>		
+							</div>			
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/box6.jpg"/>	
+						</a>
+					</li>
+				</ul>
+				
+				
+				<!-- <div class="a_box">
+					<article></article>
+					<article></article>
+				</div>
+				<div class="b_box"></div>
+				<div class="c_box">
+					<article></article>
+					<article></article>
+					<article></article>
+				</div> -->
+				
+			</section>			
+		</div>
+
+
+
+		<footer id="footer">
+			<h1><a href="#"><img src="images/foot_logo.png"/></a></h1>
+			<div class="txt">
+				<p>개인정보    처리방침 이용약관    영상정보처리기기 운영 및 관리방침    SITE MAP    Contact Us</p>
+				<p>(재)대림문화재단사업자등록번호: 305-82-09028    서울특별시 종로구 자하문로4길 21(통의동 35-1)</p>
+				<p>COPYRIGHT 2015 BY DAELIM MUSEUM ALL RIGHT RESERVED.</p>
+			</div>
+			<ul class="sns">
+				<li><img src="images/sns_01.png"/></li>
+				<li><img src="images/sns_02.png"/></li>
+				<li><img src="images/sns_03.png"/></li>
+				<li><img src="images/sns_04.png"/></li>		
+			</ul>
+		</footer>
+		
+	</div>
+
+	
+	
+	
+	
+	
+	
+	
+		
+</body>
+</html>

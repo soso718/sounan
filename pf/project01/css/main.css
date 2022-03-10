@@ -1,0 +1,87 @@
+#visual{width: 100%;}
+#visual-wrap{position: relative;width: 1200px;height: 500px;margin: auto;position: relative;margin-bottom: 15px;}
+#visual-wrap img{position: absolute;left: -400px;}
+
+.visual-text{position: absolute;left: 136px;top: 180px;}
+.visual-text p{color:#fff;}
+.visual-text p:nth-child(1){font-size: 26px;font-family:"barun";}
+.visual-text p:nth-child(2){font-size: 58px;font-family:"barunB";}
+.visual-text p:nth-child(3){font-size: 21px;font-family:"barun";}
+
+.path{position: absolute;left: 50%;bottom: 21px;margin-left:-35px}
+.path li{width: 10px;height: 10px;background: rgba(255,255,255,0.8);float: left;margin-left: 10px;}
+.path li.on{background: yellow;}
+.path li a{display:block;width: 10px;height: 10px;}
+.path li:first-child{margin-left:0px;}
+
+.btn{position: absolute;left: 0;top: 50%;width: 100%;margin-top:-40px;}
+.btn a{color:rgba(255,255,255,0.8);font-size: 72px;}
+.btn .btn_left {float: left;}
+.btn .btn_right{float: right;}
+
+#contents{}
+.box{float: left;}
+.conbox1{width: 295px;height: 452px;border: 1px solid #d7d7d7;border-right:none;}
+.conbox1 .notice{height: 179px;border-bottom: 1px solid #d7d7d7;padding: 15px;box-sizing:border-box;position: relative;}
+.conbox1 .notice h2{color:#003469;font-size: 16px;}
+.conbox1 .notice ul{}
+.conbox1 .notice ul li{border-bottom: 1px dotted #d7d7d7;padding-bottom:10px;margin-top: 10px;}
+.conbox1 .notice ul li a{font-size: 13px;}
+.conbox1 .notice ul li span{position: absolute;right: 15px;font-size: 12px;}
+.conbox1 .notice p{position: absolute;right: 15px;top: 15px;}
+.conbox1 .notice p a{font-size: 12px;}
+
+.conbox1 .notice ul li:hover a{font-family:"nanumB";}
+
+.conbox1 .area{height: 273px;padding:15px 0;}
+.conbox1 .area h2{color:#003469;font-size: 16px;margin-left:15px;}
+.conbox1 .area div{width: 295px;height: 69px;margin-bottom: 5px;position: relative;padding-left: 1px;}
+.conbox1 .area div:nth-of-type(1){margin-top: 13px;}
+.conbox1 .area div:nth-of-type(2){margin-top:8px;}
+.conbox1 .area h3{position: absolute;left: 20px;top: 18px;color:#fff;font-size: 14px;}
+.conbox1 .area p{position: absolute;left: 20px;top: 40px;color:#fff;font-size: 12px;}
+.conbox1 .area span{position: absolute;right: 20px;top: 25px;color:#fff;}
+.conbox1 .area a:hover img{}
+
+.conbox2{width: 600px;height: 452px;}
+.conbox2 .woomi_wide{width: 298px;height: 300px;border: 1px solid #d7d7d7;position: relative;border-right: none;}
+.conbox2 .woomi_wide h3{color:#003469;font-size: 16px;margin-bottom: 13px;margin-left: 15px;margin-top: 15px;}
+.conbox2 .woomi_wide img{margin-left: 12px;}
+.conbox2 .woomi_wide ul{margin-left: 20px;margin-top:5px;}
+.conbox2 .woomi_wide ul li{background: url(../images/main/dot.jpg) 2px 8px no-repeat;margin-bottom:6px;text-indent:15px;}
+.conbox2 .woomi_wide ul li a{font-size: 13px;}
+.conbox2 .woomi_wide p{position: absolute;right: 15px;top: 15px;}
+.conbox2 .woomi_wide p a{font-size: 12px;}
+
+.conbox2 .woomi_wide ul li:hover a{font-family:"nanumB";}
+
+.bb{float: left;}
+
+.conbox2 .resume{width: 299px;height: 300px;border: 1px solid #d7d7d7;position: relative;}
+.conbox2 .resume h3{color:#003469;font-size: 16px;position: absolute;left: 15px;top: 15px;z-index: 10;}
+.conbox2 .resume img{position: absolute;left: 3px;top: 4px;}
+.conbox2 .resume >p{text-align: center;position: absolute;left: 33px;top: 189px;}
+.conbox2 .resume >p a{font-size: 14px;}
+.conbox2 .resume div p{line-height: 46px;text-indent: 15px;position: absolute;left: 0;top:254px;width: 298px;height: 46px;}
+.conbox2 .resume div p a{font-family:"nanumB";transition:0.4s}
+.conbox2 .resume div p span{float: right;margin-right: 15px;}
+
+.conbox2 .resume div p:hover a{color:#fff}
+.conbox2 .resume div p:hover{background: #003469;color:#fff}
+
+.conbox2 .woomi_csr{width: 600px;height: 152px;padding: 10px;box-sizing:border-box;position: relative;border: 1px solid #d7d7d7;border-top: none;}
+.conbox2 .woomi_csr h3{color:#003469;font-size: 16px;}
+.conbox2 .woomi_csr img{position: absolute;right: 15px;top: 10px;}
+.conbox2 .woomi_csr >a{display:block;width: 270px;height: 80px;text-align: center;position: absolute;left: 48px;top: 45px;}
+.conbox2 .woomi_csr strong{font-size: 15px;font-family:"nanumB";color:#003469;}
+.conbox2 .woomi_csr p{margin-top:15px;}
+
+.conbox3{width: 295px;height: 452px;}
+.conbox3 .woomi_lynn{position: relative;height: 179px;border: 1px solid #d7d7d7;background: url(../images/main/woomi-lynn.jpg) 0 0 no-repeat;border-left:none;}
+.conbox3 .lynn{}
+.conbox3 .lynn a{display:block;width: 295px;height: 179px;}
+.conbox3 .lynn p{position: absolute;left: 39px;top: 130px;}
+
+.conbox3 .woomi_30th{width: 295px;height: 273px;border: 1px solid #d7d7d7;box-sizing:border-box;border-left:none;}
+.conbox3 .woomi_30th a{}
+.conbox3 .woomi_30th a img{}

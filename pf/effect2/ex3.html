@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/circle-progress.js"></script>
+	<script src="js/skill.bars.jquery.js"></script>
+	<script src="js/action2.js"></script>
+	<style>
+
+.myskills{background-color: #282828;}
+.sills-wrap{width: 300px;margin: 0 auto;margin-top: 80px;}
+.myskills h2{ font-size: 30px; color: #fff;text-align: center;}
+/*character*/
+.character{width: 300px;height:200px;margin: 0 auto;}
+.skills{width: 300px;height: 300px;margin: 0 auto;}
+.skill-circle{margin: auto;}
+.circle {position: relative;float: left;width: 50px;margin: 30px 10px;}
+.circle canvas{width: 55px;height: 55px;}
+.circle strong {position: absolute;top: 8px;left: 0;width: 50px;text-align: center;line-height: 40px;font-size: 20px;color: #eee;margin: 0 auto;}
+.circle span{display: block;margin-top: 20px;width: 55px;color: #eee;font-size: 16px;text-align: center;}
+.circle strong i {font-style: normal;font-size: 0.6em;font-weight: normal;}
+/*skills*/
+.skillbar {position: relative;display: inline-block;margin: 10px 0;width: 100%;background: #242424;height: 35px;border-radius: 3px;}
+
+.skillbar-title {position: absolute;top: 0;left: 0;  width: 100px;font-weight: bold;font-size: 13px;  color: #fff;border-top-left-radius: 3px;border-bottom-left-radius: 3px;padding: 0 20px;height: 35px;line-height: 35px;}
+
+.skillbar-bar {height: 35px;width: 0px;border-radius: 3px;display: inline-block;}
+.html5{background-color: #3c989e;}
+.css3{background-color: #5db5a4;}
+.jquery{background-color: #f4cda5;}
+.photoshop{background-color: #ed5276;}
+.illustrator{background-color: #ea4996;}
+.indesign{background-color: #c26ac4;}
+.skill-bar-percent {position: absolute;right: 10px;  top: 0;font-size: 11px;height: 35px;line-height: 35px;color: #eee;}
+
+		
+		
+	</style>
+	<script>
+		$(function(){
+		//////////////////////
+		
+		
+		/////////////////////	
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="section myskills ">
+			<div class="sills-wrap cf">
+				<div class="character">
+					<h2>CHARACTER</h2>
+					<div class="skill-circle cf">
+						<div class="first circle">
+							<strong></strong>
+						 	<span>책임감</span>
+ 					    </div>
+						<div class="second circle">
+							<strong></strong>
+						 	<span>협동성</span>
+ 					    </div>
+						
+						<div class="third circle">
+							<strong></strong>
+						 	<span>긍정적</span>
+ 					    </div>
+						<div class="forth circle">
+							<strong></strong>
+						 	<span>꼼꼼함</span>
+ 					    </div>
+					</div>
+				</div>
+				<div class="skills">
+					<h2>SKILLS</h2>
+					<div class="skillbar " data-percent="78">
+				      <span class="skillbar-title">HTML5</span>
+				      <p class="skillbar-bar html5"></p>
+				      <span class="skill-bar-percent"></span>
+				    </div>
+				    <!-- End HTML5 Skill Bar -->
+				    <div class="skillbar" data-percent="78">
+				      <span class="skillbar-title">CSS3</span>
+				      <p class="skillbar-bar css3"></p>
+				      <span class="skill-bar-percent"></span>
+				    </div>
+				    <!-- End CSS3 Skill Bar -->
+				    <div class="skillbar" data-percent="70">
+				      <span class="skillbar-title">JQUERY</span>
+				      <p class="skillbar-bar jquery"></p>
+				      <span class="skill-bar-percent"></span>
+				    </div>
+				    <!-- End WORDPRESS Skill Bar -->
+				    <div class="skillbar" data-percent="85">
+				      <span class="skillbar-title">PHOTOSTOP</span>
+				      <p class="skillbar-bar photoshop"></p>
+				      <span class="skill-bar-percent"></span>
+				    </div>
+				    <!-- End PHOTOSTOP Skill Bar -->
+				    <div class="skillbar" data-percent="90">
+				      <span class="skillbar-title">ILLUSTRATOR</span>
+				      <p class="skillbar-bar illustrator"></p>
+				      <span class="skill-bar-percent"></span>
+				    </div>
+				    <!-- End ILLUSTRATOR Skill Bar -->
+				    <div class="skillbar" data-percent="70">
+				      <span class="skillbar-title">INDESIGN</span>
+				      <p class="skillbar-bar indesign"></p>
+				      <span class="skill-bar-percent"></span>
+				    </div>
+				    <!-- End INDESIGN Skill Bar -->
+				</div>
+				<!-- End INDESIGN Skill Bar -->
+			</div>
+		</div>
+</div>		
+</body>
+</html>

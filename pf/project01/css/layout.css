@@ -1,0 +1,27 @@
+#header{width: 100%;background: #fff;}
+#header-wrap{width: 1200px;height: 105px;background: #fff;margin: auto;position: relative;}
+#header h1{position: absolute;left: 0;top:20px;}
+
+.topmenu{position: absolute;right: 0;top: 40px;}
+.topmenu dd{float: left;margin-left: 25px;}
+.topmenu dd a{font-size: 12px;font-family:"nanumB";}
+
+#container:after{display:block;content:'';clear:both}
+#container{height: 100%;width: 1200px;margin: auto;}
+
+#nav{position: absolute;left: 200px;top: 38px;}
+#gnb{position: relative;}
+#gnb li{float: left;margin-left: 70px;}
+#gnb li a{font-size: 18px;color:#6a6a6a;font-family:"nanumB";transition:0.2s}
+#gnb li:hover a{color:#245397;border-bottom: 2px solid #245397;padding-bottom:8px}
+
+#footer{width: 100%;background: url(../images/common/footer_bg.jpg) 0 0 repeat-x;margin-top: 15px;}
+#footer-wrap{width: 1180px;height: 140px;margin: auto;position: relative;}
+#footer-wrap h4{position: absolute;top: 18px;}
+.footer-text{position: absolute;left: 142px;width: 530px;}
+.footer-text ul{position: absolute;top: 30px;}
+.footer-text ul li{float: left;margin-right: 23px;}
+.footer-text ul li a{font-size: 14px;color:#8d8d8d;font-family:"nanumB";}
+.footer-text address{position: absolute;top: 73px;font-size: 12px;color:#585858}
+.footer-text p{position: absolute;top: 93px;font-size: 12px;color:#585858}
+#footer-wrap form{position: absolute;right: 0;top: 25px;}

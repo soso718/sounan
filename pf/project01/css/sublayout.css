@@ -1,0 +1,32 @@
+.sub-visual{}
+.sub-visual div{}
+.sub-visual div img{}
+
+.side-bar{width: 235px;height: 770px;float: left;}
+.side-bar .text{margin-top: 40px;}
+.side-bar .text h2{font-size: 36px;color:#245397;font-family:"nanumB";}
+.side-bar .text p{font-size: 14px;color:#aaa;margin-top: 20px;}
+
+.lnb{margin-top: 55px;}
+.lnb ul{}
+.lnb ul li{text-indent: 10px;border-bottom:1px solid #dcdcdc;padding:15px 0;box-sizing:border-box;
+			}
+.lnb ul li a{font-size: 16px;font-family:"nanumB";color:#222;transition:0.5s}
+.lnb .on a{display:block;color:#fff;font-family:"nanumB";}
+.lnb .on{background:#245397;background-image:url(../images/sublaylout/next.png);background-position: 95% 50%;background-repeat: no-repeat;
+}
+
+.lnb li:hover a{display:block;color:#245397;font-family:"nanumEB";}
+.lnb li:hover{}
+
+
+#contents{}
+
+.contop{width: 880px;height: 120px;border-bottom: 2px solid #ddd;float: right;position: relative;}
+.contop h3{font-size: 36px;font-family:"nanumB";margin-top: 40px;color:#555;position: absolute;bottom: 10px;}
+
+.contop .path{position: absolute;right: 0;bottom: 10px;}
+.contop .path li{float: left;margin-right: 5px;}
+.contop .path li a{font-size: 12px;padding-right: 5px;font-family:"nanumB";}
+.contop .path li strong{color:#245397;font-family:"nanumEB";}
+
